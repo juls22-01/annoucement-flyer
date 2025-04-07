@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christex Foundation</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+ 
+        .flyer-container {
+            background: linear-gradient(145deg, #5a8cbd, #0a70b4);
+            width: 700px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top Left Logo */
+        .top-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 70px;
+            height: 70px;
+            z-index: 2;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Decorative Elements */
+        .corner-decor {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            top: -50px;
+            right: -50px;
+        }
+
+        .divider {
+            border: 0;
+            height: 2px;
+            background: rgba(255,255,255,0.3);
+            margin: 25px 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 30px; /* Added space for logo */
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            letter-spacing: 1.5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .positions {
+            margin: 25px 0;
+        }
+
+        .job-role {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .role{
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 9px;
+            margin: -10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .job-title {
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .job-department {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .benefits {
+            list-style: none;
+            margin: 25px 0;
+            columns: 2;
+        }
+
+        .benefits li {
+            margin: 10px 0;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cta-button {
+            background: #e74c3c;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.4s ease;
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: #070100;
+        }
+
+
+        @media (max-width: 600px) {
+            .flyer-container {
+                width: 100%;
+                padding: 25px;
+            }
+            
+            .benefits {
+                columns: 4;
+            }
+            
+            .top-logo {
+                width: 50px;
+                height: 50px;
+                top: 15px;
+                left: 15px;
+            }
+        }
+
+
+
+        .workshop-content {
+    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    margin: 25px 0;
+    transition: transform 0.2s ease;
+}
+
+.learning-track {
+    display: flex;
+    gap: 25px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.learning-card {
+    background: rgba(0,0,0,0.2);
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hover Effects */
+.learning-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="flyer-container">
+        <!-- Add your logo here -->
+        <img src="images/christexfoundation.jpg.jpeg" alt="" class="top-logo">
+        <div class="corner-decor"></div>
+        
+        <div class="header">
+            <h1>Christex Foundation</h1>
+            <p><ins>Innovation Workshop</ins></p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="positions">
+            <div class="job-role">
+                <div>
+                    <div class="job-title">Design Workshop</div>
+                    <div class="job-department">Tuesday</div>
+                </div>
+                <div> 2pm - 4pm</div>
+            </div>
+            
+
+            <div class="job-role">
+                <div>
+                    <div class="job-title">Engineering Workshop</div>
+                    <div class="job-department">Thursday</div>
+                </div>
+                <div> 2pm - 4pm</div>
+                
+            </div>
+        </div>
+        <div class="role">
+            <div>
+                <div class="job-title">Digital Litracy Workshop</div>
+                <div class="job-department">Friday</div>
+            </div>
+            <div>
+                <div>2pm - 4pm</div>
+                <div style="font-size: 0.8em; margin-top: 5px;"></div>
+            </div>
+        </div>
+
+        <hr class="divider">
+        <div class="workshop-content">
+            <h2>What You'll Learn:</h2>
+            
+            <div class="learning-track">
+                <div class="learning-card">
+                    <h3> Design Workshop</h3>
+                    <ul>
+                        <li>Design Fundamentals</li>
+                        <li>UI/UX principles</li>
+                        <li>Branding & Identity</li>
+                        <li>Hands On Project</li>
+                    </ul>
+                </div>
+        
+                <div class="learning-card">
+                    <h3> Engineering Workshop</h3>
+                    <ul>
+                        <li>Problem-Solving & Innovation</li>
+                        <li>Hands On Prototyping</li>
+                        <li>Sustainable Engineering</li>
+                        <li>Best Practice </li>
+                    </ul>
+                </div>
+        
+                <div class="learning-card">
+                    <h3> Digital Litracy Workshop</h3>
+                    <ul>
+                        <li>Computer Basics</li>
+                        <li>Cybersecurity Awareness</li>
+                        <li>Digital Marketing In Social Media</li>
+                        <li>Microsoft Office & Google Workspace</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <hr class="divider">
+        
+        <div>
+            <p>
+                <em> please note that the all workshops are <strong>free</strong>.</em>
+                  <a href="https://www.christex.foundation/">Learn More</a>
+            </p>
+        </div>
+
+       
+        <a href="https://lu.ma/christexfndn">
+        <button class="cta-button">Join Us Now</button>
+        </a>
+    </div>
+
+</body>
+</html>
